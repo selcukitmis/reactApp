@@ -1,0 +1,28 @@
+{
+  "name": "ders1",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  },
+  "devDependencies": {
+    "eslint": "^4.0.0",
+    "eslint-config-airbnb": "^15.0.1",
+    "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-jsx-a11y": "^5.0.3",
+    "eslint-plugin-prettier": "^2.1.1",
+    "eslint-plugin-react": "^7.1.0",
+    "prettier": "^1.4.4",
+    "prettier-eslint": "^6.3.0",
+    "react-scripts": "1.0.7",
+    "stylelint-config-standard": "^16.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "lint:eslint": "eslint"
+  }
+}
