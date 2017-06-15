@@ -8,6 +8,8 @@
     "stylelint": "^7.11.0"
   },
   "devDependencies": {
+    "enzyme": "^2.8.2",
+    "enzyme-to-json": "^1.5.1",
     "eslint": "^4.0.0",
     "eslint-config-airbnb": "^15.0.1",
     "eslint-plugin-import": "^2.3.0",
@@ -19,6 +21,7 @@
     "prettier": "^1.4.4",
     "prettier-eslint": "^6.3.0",
     "react-scripts": "1.0.7",
+    "react-test-renderer": "^15.6.1",
     "stylelint-config-standard": "^16.0.0"
   },
   "scripts": {
@@ -38,5 +41,10 @@
       "git add"
     ]
   },
-  "pre-commit": "lint-staged"
+  "pre-commit": "lint-staged",
+  "jest": {
+    "snapshotSerializers": [
+      "<rootDir>/node_modules/enzyme-to-json/serializer"
+    ]
+  }
 }
