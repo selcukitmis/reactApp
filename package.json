@@ -28,12 +28,13 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "lint": "yarn run lint:eslint && yarn run lint:stylelint",
-    "lint-staged": "lint-staged",
-    "format": "prettier print-width=100 --single-quote --trailling-comma all --write \"{src,__tests__}/**/*.js\"",
-    "eject": "react-scripts eject",
     "lint:eslint": "eslint",
-    "lint:stylelint": "stylelint"
+    "lint:stylelint": "stylelint",
+    "lint": "yarn run lint:eslint && yarn run lint:stylelint",
+    "format": "prettier --print-width=100 --single-quote --trailing-comma all --write \"{src,__tests__}/**/*.js\"",
+    "lint-staged": "lint-staged",
+    "eject": "react-scripts eject",
+    "coverage": "yarn run test -- --coverage"
   },
   "lint-staged": {
     "*.js": [

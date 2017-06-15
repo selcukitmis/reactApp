@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
 
 class Test extends Component {
-
   render() {
-    return (
-      <b>asd</b>
-    );
+    return <b>asd</b>;
   }
 }
 
