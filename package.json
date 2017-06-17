@@ -8,6 +8,7 @@
     "stylelint": "^7.11.0"
   },
   "devDependencies": {
+    "codecov": "^2.2.0",
     "enzyme": "^2.8.2",
     "enzyme-to-json": "^1.5.1",
     "eslint": "^4.0.0",
@@ -16,6 +17,7 @@
     "eslint-plugin-jsx-a11y": "^5.0.3",
     "eslint-plugin-prettier": "^2.1.1",
     "eslint-plugin-react": "^7.1.0",
+    "istanbul": "^0.4.5",
     "lint-staged": "^3.6.1",
     "pre-commit": "^1.2.2",
     "prettier": "^1.4.4",
@@ -28,13 +30,15 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
+    "test:ci": "yarn run lint && yarn test && yarn run coverage",
     "lint:eslint": "eslint",
     "lint:stylelint": "stylelint",
     "lint": "yarn run lint:eslint && yarn run lint:stylelint",
     "format": "prettier --print-width=100 --single-quote --trailing-comma all --write \"{src,__tests__}/**/*.js\"",
     "lint-staged": "lint-staged",
     "eject": "react-scripts eject",
-    "coverage": "yarn run test -- --coverage"
+    "coverage": "yarn run test -- --coverage --collectCoverageFrom=src/**/*.js --collectCoverageFrom=!src/index.js  --collectCoverageFrom=!src/registerServiceWorker.js",
+    "postcoverage": "istanbul check-coverage --statements 90 --functions 90 --branches 90 --lines 90"
   },
   "lint-staged": {
     "*.js": [
