@@ -23,7 +23,7 @@ exports[`renders correct 1`] = `
     <code>
       src/App.js
     </code>
-     and save to reload.ssss
+     and save to reload
   </p>
 </div>
 `;
