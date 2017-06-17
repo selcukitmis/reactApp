@@ -22,5 +22,5 @@ before_deplay:
 deploy:
   provider: surge
   project: ./build/
-  domain: reactApp.surge.sh
+  domain: slck.reactApp.surge.sh
   skip_cleanup: true
