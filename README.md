@@ -10,3 +10,4 @@ git push origin master
 
 
 yeni branch git checkout -b gelistirme 
+
