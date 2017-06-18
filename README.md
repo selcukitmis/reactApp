@@ -6,3 +6,7 @@ codecov token: 5f792fa3-aa1e-45c0-aa69-f8acd30ac2f6
 
 git add.
 git commit -m "açıklama"
+git push origin master
+
+
+yeni branch git checkout -b gelistirme 
